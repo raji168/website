@@ -1,0 +1,135 @@
+/*whole about-page  */
+.about-us{
+    padding: 64px;
+    color: black;
+}
+/* heading */
+.about-us .heading{
+    text-transform: uppercase;
+    /* text-shadow: 1px 1px rgb(105, 204, 235); */
+    padding: 0.4rem 0;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: heading;
+    animation-duration:1s;
+}
+/* @keyframes heading {
+    0%   {color: transparent;}
+    25%  {color:black; text-shadow: 1px 1px rgba(64, 200, 241, 0.6);opacity:-1;}
+} */
+/*  underline heading */
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 50%;
+}
+/* line animation */
+.line div:nth-child(1),.line div:nth-child(2),.line div:nth-child(3){
+    animation-name: example;
+    animation-duration:3s;
+}
+/* @keyframes example {
+    0%   {background:rgba(34, 167, 240, 1); }
+    25%  {background:transparent; }
+} */
+/* about-page description */
+.about-us .content{
+    justify-content: center;
+    margin:0 250px;
+    padding: 60px;
+    font-size: 16px;
+    word-spacing: 5px;
+    text-align: center;
+    animation-name: txt;
+    animation-duration:3s;
+}
+/* image and content */
+.block, .block2{
+    display: flex;
+}
+.img-block1,.img-block2{
+    width: 20%;
+}
+.tx{
+    justify-content: center;
+    padding: 0 100px;
+    margin: 100px;
+    font-size: 15px;
+    word-spacing: 5px;
+    text-align: justify; 
+    animation-name: txt;
+    animation-duration:3s;
+}
+/* @keyframes txt {
+    0%   {color:black }
+    25%  {color:transparent; }
+} */
+@media all and (max-width: 968px) {
+    .about-us .heading{
+        font-size: 16px;
+        padding: 0.2rem 0;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: -15px;
+    }
+    .line{
+        margin-left: -15px;
+    }
+    .line div:nth-child(1),
+    .line div:nth-child(3){
+    height: 3px;
+    width: 45px;
+    }
+    .line div:nth-child(2){
+        width: 8px;
+        height: 8px;
+    }
+    .about-us .content{
+        margin-top:40px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        font-size: 15px;
+        word-spacing: 5px;
+        text-align: center;
+    }
+    .block, .block2{
+        display: contents;
+    }
+    .tx{
+        padding: 0 0px;
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 15px;
+        word-spacing: 1px;
+    }
+    .img-block1,.img-block2{
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+
+
+
+

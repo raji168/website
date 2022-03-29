@@ -1,0 +1,172 @@
+.footer{   
+    /* width: 1420px; */
+    /* height: 400px; */
+    /* background-color: blue; */
+    display: grid;
+    grid-template-rows: auto ;
+}
+.footer-blocks .footer-block{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.logo-img .acceedo-icon-contact{
+    margin-top:3%;
+    margin-left: 2%;
+    cursor: pointer;
+}
+.explore {
+    margin-top:10%; 
+   
+}
+.explore1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+.contact-detils h2, .explore-block h2{
+    text-transform: uppercase; 
+    font-family: 'Times New Roman', Times, serif;
+}
+.explore1 .exploretx  a{
+    font-size: medium;
+    text-decoration: none; 
+}
+.exploretx{
+    padding:10px;
+}
+.explore .explore1 .exploretx a {
+    color:black;
+    line-height: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.15em;
+}
+.exploretx a:after {   
+    background: none repeat scroll 0 0 transparent;
+    /* bottom: 0; */
+    content: "";
+    display: block;
+    height: 2px;
+    /* left: 50%; */
+    position: relative;
+    background:cadetblue;
+    transition: width 0.3s ease 0s, right 0.3s ease 0s;
+    width: 0;
+}
+.exploretx a:hover:after { 
+    width: 40%; 
+    /* left: 0;  */
+}
+.contact-detils{
+    margin-top:10%; 
+}
+.contact-details-tx1{
+    display: grid;
+    grid-template-columns: 1em 4fr;
+    /* grid-row-gap: 10px;
+    grid-template-rows: 2fr 1fr 5fr; */
+    grid-gap: 15px;
+    line-height: 30px;;
+}
+.social-icons{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-right: 150px;
+   
+}
+.phone-icon{
+    color: royalblue;
+}
+.footerbackground-image{
+    position:absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+@media all and (max-width: 968px) {
+    .footer{
+        position: absolute;
+    }
+    .footer-blocks .footer-block{
+        display:grid;
+        grid-template-columns: 1fr; 
+    }
+    .footerbackground-image{
+        position:absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .acceedo-icon-contact{
+        padding: 0px;
+        width: 30%;
+        margin: 0px;
+    }
+    .contact-detils h2, .explore-block h2{
+        text-transform: uppercase; 
+        font-family: 'cairo';
+        font-size: 16px;
+    }
+    .explore {
+        margin-top:5%; 
+    }
+    .explore1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+    }
+    .explore1 .exploretx  a{
+        font-size: 14px;
+        text-decoration: none; 
+    }
+    .exploretx{
+        padding:10px;
+    }
+    .explore .explore1 .exploretx a {
+        color:black;
+        line-height: 30px;
+        text-transform: capitalize;
+        letter-spacing: 0.15em;
+    }
+    .exploretx a:after {   
+        background: none repeat scroll 0 0 transparent;
+        /* bottom: 0; */
+        content: "";
+        display: block;
+        height: 2px;
+        /* left: 50%; */
+        position: relative;
+        background:cadetblue;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+        width: 0;
+    }
+    .exploretx a:hover:after { 
+        width: 18%; 
+        /* left: 0;  */
+    }
+    .contact-detils{
+        margin-top:0%; 
+    }
+    .contact-details-tx1{
+        display: grid;
+        grid-template-columns: 1em 4fr;
+        /* grid-gap: 15px; */
+        row-gap: 15px;
+        column-gap: 20px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+    .social-icons{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .phone-icon{
+        color: royalblue;
+    }
+}

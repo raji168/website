@@ -1,0 +1,19 @@
+.website-layout{
+    display: grid;
+    grid-template-rows:64px auto auto ;
+    
+}
+.website-header{
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+
+}
+.website-content{
+   z-index: -1;
+}
+.website-footer{
+    position:relative;
+    /* margin-top:100% */
+}

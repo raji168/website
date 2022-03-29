@@ -1,0 +1,166 @@
+nav{
+    /* margin: 10px; */
+    box-sizing: border-box;
+    background-color: #fff;
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav .logo{
+    float: left;
+    cursor: pointer;
+    font-size: 27px;
+    line-height: 15px;
+}
+nav .menu-items{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav .menu-items .menu-item{
+    /* float: left; */
+    display: inline-block;
+    margin: 0 5px;
+}
+nav .menu-items .menu-item a{
+    text-decoration: none;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav .menu-items .menu-item a:hover{
+    color: skyblue;
+    /* box-shadow: 0 0 5px #33ffff, #66ffff; */
+}
+nav .menu-items .sub-menus{
+    position: absolute;
+    /* top:90px; */
+    /* top: 0; */
+    opacity: 0;
+    list-style: none;
+    top: 63px;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: all 0.3s linear;
+    border : 1px solid black;
+    z-index: 2;
+    width: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+nav .menu-items .menu-item:hover > .sub-menus{
+    /* top: 70px; */
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+}
+nav .menu-items .sub-menus .sub-menu a:hover{
+    color: skyblue;
+    box-shadow: none;
+}
+nav .menu-items .sub-menus .sub-menu{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+}
+nav .menu-items .sub-menus .sub-menu a{
+    display: inline-block;
+    line-height: 20px;
+    font-size: 15px;
+    width: 300px;
+}
+.show ,.icon , input{
+    display: none;
+}
+.fa{
+    font-size: 25px;
+}
+@media all and (max-width: 968px) {
+   nav .menu-items{
+        /* margin-right: 0px; */
+        float: left;
+    }
+     nav .logo{
+        padding: 0px;
+        width: 50%;
+        margin: 10px;
+     }
+   nav .menu-items .menu-item{
+        margin-top: 10px;
+    }
+     nav .menu-items .menu-item {
+        display: block;
+        width: 100%;
+    }
+    nav .menu-items .sub-menus .sub-menu{
+        display: block;
+        width: 100%;
+    }
+     nav .menu-items .sub-menus{
+        top : 70px;
+        position: static;
+        border: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav .menu-items .menu-item a:hover{
+        display: initial;
+        box-shadow: none;
+        background-color: #f9f9f9;
+    }
+   nav .menu-items .sub-menus .sub-menu{
+        float: left;
+        border-bottom: 0px;
+    }
+    nav .menu-items .sub-menus a{
+        padding-left: 40px;
+    }
+    .show{
+        display: block;
+        color: #000;
+        text-transform: capitalize;
+        font-size: 18px;
+        padding: 8px 15px;
+        line-height: 35px;
+        cursor: pointer;
+    }
+    .show:hover
+    {
+        color: skyblue;
+    }
+    .icon{
+        display: block;
+        color: black;
+        position: absolute;
+        right: 40px;
+        line-height: 45px;
+        font-size: 70px;
+        cursor: pointer;
+    }
+    nav .menu-items .menu-item a:hover{ 
+        box-shadow: none;
+        background-color: #f9f9f9;
+    }
+    nav .menu-items .menu-item:hover > .sub-menus{
+        top: 70px;
+        opacity: 1;
+        transform: translateY(0px);
+        visibility: visible;
+    }
+   .show + a,ul{
+       display: none;
+   }
+   
+   [id^=btn]:checked + ul{
+    display: block;
+   } 
+}

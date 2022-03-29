@@ -1,0 +1,154 @@
+.portfolio-header{
+    text-align: center;
+    padding: 100px;
+    margin: 9px 13px;
+}
+.heading{
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+.portfolio-header-section {
+    margin-bottom: 15px;
+    margin-top: -32px;
+    margin-right: 20px;
+}
+.portfolio-header-section .heading ,.line{
+   margin-top: 4px;
+
+}
+/* .border{
+    width: 100px;
+    height: 2px;
+    background:cadetblue;
+    margin: 10px auto;
+    animation-name: example;
+    animation-duration: 3s;
+}
+@keyframes example {
+    0%   {background-color:cadetblue; }
+    25%  {background-color:transparent; }
+    
+} */
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 50px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+
+}
+.line div:nth-child(2){
+    width: 8px;
+    height: 8px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 50%;
+}
+.portfolio-section{
+    /* padding: 110px; */
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 35px;
+}
+.sub-portfolio-header{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teams{
+    margin:15px;
+    padding: 50px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.teams:hover{
+    background: #ddd;
+    border-radius: 12px;
+}
+.teams img{
+    width: 185px;
+    height: 185px;
+}
+.name{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.designation{
+    font-style: inherit;
+    color:#888;
+}
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color:#4e4e4e;
+}
+.social-link{
+    margin:14px;
+}
+.social-link a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: 0.4s;
+}
+.social-link a i{
+    color:#444
+}
+.social-link a:hover{
+    transform: scale(1.5);
+}
+@media all and (max-width: 968px) {
+    .portfolio-header{
+        padding: 70px;
+        margin: 14px 4px;
+        
+
+    }
+    .sub-portfolio-header{
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 0;
+        justify-content: center;
+        
+    }
+    .teams{
+        margin: 2px 15px;
+        padding: 50px;
+        max-width: 30%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        display:contents;
+
+    }
+    .teams:hover{
+        background: rgb(211, 47, 47);
+        border-radius: 10px;
+    }
+    .teams img{
+        width: 165px;
+        height: 165px;
+    }
+ 
+} 

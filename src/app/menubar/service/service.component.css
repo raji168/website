@@ -1,0 +1,123 @@
+.service-section{
+    width: 90%;
+    margin: 9px 64px;
+    justify-content: center;
+    padding: 64px;
+}
+.heading{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    word-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.service-section >.heading,.service-section>p{
+    text-align: center;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+
+
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: rgba(34, 167, 240, 1);
+    border-radius: 50%;
+}
+.service-section p{
+    margin:20px;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.service-box{
+    margin: 10px;
+    overflow: hidden;
+    padding: 35px 35px;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s ease-in,transform 0.3s ease-in;
+    width: 200px;
+}
+.service-box:hover{
+    background-color: rgba(34, 167, 240, 1);
+    transform:translateY(-3px)
+}
+.service-box::before{
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: #222f3e #222f3e rgba(1,1,1,0.4),rgba(1,1,1,0.4);
+    position: absolute;
+    right: -40px;
+    top:-40px;
+    transition:right 0.3s ease-out,top 0.3s ease-out;
+}
+.service-box:hover::before{
+    right: 0;
+    top: 0;
+}
+.service-box >i{
+    display:block;
+    color:rgba(34, 167, 240, 1);
+    font-size: 4rem;
+    margin-bottom: 0.9rem;
+    transition: color 0.3s ease-out;
+}
+.service-box>.title{
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.55rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    transition: color 0.3s ease-out;
+}
+.service-box>.service-desc{
+    line-height: 30px;
+    margin: 0;
+    transition: color 0.3s ease-out;
+}
+.service-box:hover>i,
+.service-box:hover>.title,
+.service-box:hover>.service-desc{
+    color:black;
+}
+@media all and (max-width: 968px) {
+    .service-section{
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 27px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        padding: 50px;
+    }
+    .service-section p{
+        margin:15px;
+    }
+    .service-container{
+        margin-top: 20px;
+    }
+    .service-box{
+        margin: 10px;
+        padding: 11px 6px;
+    }
+}
